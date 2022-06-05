@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+}
+body{
+    background-color: #ECEEF2;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.page{
+    background-color: #FFFFFF;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 2em;
+    border: none;
+    border-radius: 15px;
+}
+
+.logo {
+    padding: 0 8em 0 8em ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0;
+    
+}
+
+.logo h1{
+    margin: 0;
+}
+
+
+
+.input{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 1.5em;
+    
+    
+}
+.input-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    width: 60%;
+    
+}
+.input-flex-d{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    width: 40%;
+    margin-left: 1em;
+    
+}
+.flex{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.input-total{
+    
+    padding: 0.8em;
+    border: 1px solid #CCC;
+    border-color: #8d7a7a ;
+    border-radius: 5px;
+    outline: none;
+    
+}
+
+.input-partial-a{ 
+    padding: 0.8em;
+    border: 1px solid #CCC;
+    border-color: #8d7a7a ;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-partial-b{ 
+    padding: 0.8em;
+    border: 1px solid #CCC;
+    border-color: #8d7a7a ;
+    border-radius: 5px;
+    outline: none;
+}
+
+span p{
+    padding: 1px 7px;
+    color: red;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6em;    
+}
+
+
+.register{
+    width: 17%;
+    padding: 10px ;
+    background-color: #0DBDBD;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 650px) {
+
+
+    .logo{    
+        padding: 3em;
+    }
+    
+    body{
+        background-color: #FFFFFF;
+    }
+    
+    .page{
+        margin: 0;
+        padding: 1em;
+        background-color: #FFFFFF;
+    }
+    .input-flex{
+        margin-right: 1.5em;
+    }
+    .input-flex-d{
+       
+        
+        margin-left: 1em;
+        margin-right: 1.2em;
+        
+    }
+    .input-total{   
+        width: 94%;  
+    }
+    .footer{
+        display: inline;
+        margin-top: 10em;    
+        
+    }
+    .register{
+        width: 100%; 
+        margin-top: 1em; 
+    }
+    
+}
+
+}

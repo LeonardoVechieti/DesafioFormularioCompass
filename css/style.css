@@ -158,6 +158,22 @@ span p{
     border-radius: 7px;
     cursor: pointer;
 }
+.sucess{
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+    margin-bottom: 12em;
+}
+.sucess button{
+    width: 30%;
+    padding: 35px ;
+    background-color: #0DBDBD;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 650px) {
@@ -198,7 +214,14 @@ span p{
         width: 100%; 
         margin-top: 1em; 
     }
-    
+    .sucess {
+        margin-top: 4em;
+    }
+    .sucess button{
+        width: 100%;
+        padding: 10px ;
+        
+    }
 }
 
 }

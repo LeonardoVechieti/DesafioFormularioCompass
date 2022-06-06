@@ -97,9 +97,8 @@ function register() {
     }
     
     //para não recarregar a pagina
-    
+    event.preventDefault();
     
     return;
-
 
 }

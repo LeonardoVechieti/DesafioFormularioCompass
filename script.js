@@ -7,7 +7,6 @@ function back(){
 //esconde o sucess ao carregar a pagina
 document.getElementById("page-sucess").style.display="none";
 
-const form = document.querySelector("#validation");
 
 function register() {
     let=cont=0;

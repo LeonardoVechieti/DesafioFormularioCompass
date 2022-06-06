@@ -95,6 +95,7 @@ span p{
 }
 .span-check p{
    padding: 1em;
+   width: 100%;
 }
 
 .footer{

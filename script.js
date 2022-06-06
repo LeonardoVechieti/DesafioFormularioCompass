@@ -7,11 +7,19 @@ function back(){
 //esconde o sucess ao carregar a pagina
 document.getElementById("page-sucess").style.display="none";
 
-
+//local storage
+let pessoa = {nome: 'Matheus', idade: 29}
+// Transformar o objeto em string e salvar em localStorage
+localStorage.setItem('pessoa', JSON.stringify(pessoa));
+// Receber a string
+let pessoaString = localStorage.getItem('pessoa');
+// transformar em objeto novamente
+let pessoaObj = JSON.parse(pessoaString);
+console.log(pessoaObj.nome);
 
 const form = document.querySelector("#validation");
 
-form.onsubmit = event => {
+function register() {
     let=cont=0;
     //constantes
     const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.[a-z]?$/i
@@ -25,6 +33,16 @@ form.onsubmit = event => {
     let phone = document.querySelector("#phone").value;
     let birthday = document.querySelector("#date").value;
     let checkbox = document.getElementById('checkbox');
+
+    //local storage
+    let storage = {name, email, password, phone, birthday, checkbox}
+    // Transformar o objeto em string e salvar em localStorage
+    localStorage.setItem('storage', JSON.stringify(storage));
+    // Receber a string
+    let storageString = localStorage.getItem('storage');
+    // transformar em objeto novamente
+    let storageObj = JSON.parse(storageString);
+    console.log(storageObj.nome);
 
     //remove o conteudo o alert
     document.getElementById("alertName").innerHTML = "<p></p>";

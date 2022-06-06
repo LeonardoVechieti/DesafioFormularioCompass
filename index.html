@@ -42,13 +42,13 @@
 
                     <div class="flex">
                         <div class="input-flex">
-                            <label for="password">Password</label>
+                            <label for="password">Password *</label>
                             <input type="password" id="password" class="input-total">
                             <span id="alertPassword" class="alert"></span>
                         </div>
     
                         <div class="input-flex-d">
-                            <label for="date">Birthday</label>
+                            <label for="date">Birthday *</label>
                             <input type="date" id="date" class="input-total" placeholder="">
                             <span id="alertDate" class="alert"></span>
                         </div>
@@ -57,18 +57,20 @@
             </div>
 
             <div class="footer">
-                <div>
-                    <span id="alertCheck"></span>
+                <div class="footer-checkbox">
+                    <span id="alertCheck" class="span-check"></span>
                     <label class="checkbox">I accept the terms and privacy
                         <input type="checkbox" checked id="checkbox">
                         <span class="check"></span>
                     </label>
                 </div>
-                <button type="submit" class="register">Register</button>
+                <div class="footer-button">
+                    <button onclick="register()" class="register">Register</button>
+                </div>
             </div>
-
             </form>
         </section>
+    
 
         <section class="page" id="page-sucess">
             <div class="logo">
@@ -83,7 +85,7 @@
         </section>
     </main>
 
-    <script src="/js/script.js"> </script>
+    <script src="script.js"> </script>
 </body>
 
 </html>

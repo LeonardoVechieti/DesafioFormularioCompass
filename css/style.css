@@ -9,15 +9,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-
 
 .page{
     background-color: #FFFFFF;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding: 2em;
+    margin-top: 6em;
+    margin-bottom: 6em;
+    padding: 1.5em;
     border: none;
     border-radius: 15px;
 }
@@ -34,8 +32,6 @@ body{
 .logo h1{
     margin: 0;
 }
-
-
 
 .input{
     display: flex;
@@ -62,10 +58,8 @@ body{
 }
 .flex{
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
 }
-
 
 .input-total{
     
@@ -99,13 +93,16 @@ span p{
     margin: 0 0 0 0;
     position: absolute;
 }
+.span-check p{
+   padding: 1em;
+}
 
 .footer{
     display: flex;
     justify-content: space-between;
     margin-top: 6em;    
 }
-.checkbox{
+.footer-checkbox{
     display: block;
     position: relative;
     padding-left: 30px;
@@ -149,7 +146,6 @@ span p{
 }
 
 .register{
-    width: 17%;
     padding: 10px ;
     background-color: #0DBDBD;
     color: white;
@@ -181,6 +177,7 @@ span p{
 
     .logo{    
         padding: 3em;
+      
     }
     
     body{
@@ -207,12 +204,21 @@ span p{
     }
     .footer{
         display: inline;
-        margin-top: 10em;    
-        
+    }
+    .footer-checkbox{
+        margin-top: 3em;
     }
     .register{
         width: 100%; 
-        margin-top: 1em; 
+        margin-top: 3em; 
+    }
+    .sucess {
+        margin-top: 4em;
+    }
+    .sucess button{
+        width: 100%;
+        padding: 10px ;
+        
     }
     .sucess {
         margin-top: 4em;
@@ -224,4 +230,4 @@ span p{
     }
 }
 
-}
+

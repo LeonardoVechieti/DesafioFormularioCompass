@@ -4,8 +4,10 @@ function back(){
     document.getElementById("page-sucess").style.display="none";
     return
 }
-//esconte o sucess ao carregar a pagina
+//esconde o sucess ao carregar a pagina
 document.getElementById("page-sucess").style.display="none";
+
+
 
 const form = document.querySelector("#validation");
 
@@ -86,7 +88,7 @@ form.onsubmit = event => {
     //verifica campo do checklist
     if(checkbox.checked===false) {
         event.preventDefault();
-        document.getElementById("alertCheck").innerHTML = "<p>Checkbox invalid</p>";
+        document.getElementById("alertCheck").innerHTML = "<p>You must accept the terms</p>";
         console.log("O não cliente marcou o checkbox");
     }else cont++
    
@@ -94,6 +96,7 @@ form.onsubmit = event => {
         document.getElementById("page-register").style.display="none";
         document.getElementById("page-sucess").style.display="block";
     }
+    
     //para não recarregar a pagina
     event.preventDefault();
     

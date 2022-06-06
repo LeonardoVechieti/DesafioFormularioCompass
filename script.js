@@ -17,19 +17,25 @@ function register() {
 
     // Receber o valor do campo
     let name = document.querySelector("#name").value;
+    console.log(name);
     let email = document.querySelector("#email").value;
+    console.log(email);
     let password = document.querySelector("#password").value;
+    console.log(password);
+    console.log(password.length)
     let phone = document.querySelector("#phone").value;
+    console.log(phone);
     let birthday = document.querySelector("#date").value;
+    console.log(birthday);
     let checkbox = document.getElementById('checkbox');
 
     //local storage
-    let storage = {name, email, password, phone, birthday, checkbox}
-    // Transformar o objeto em string e salvar em localStorage
+    let storage = {name, email, password, phone, birthday}
+    //Transformar o objeto em string e salvar em localStorage
     localStorage.setItem('storage', JSON.stringify(storage));
-    // Receber a string
+    //Receber a string
     let storageString = localStorage.getItem('storage');
-    // transformar em objeto novamente
+    //transformar em objeto novamente
     let storageObj = JSON.parse(storageString);
     console.log(storageObj.nome);
 
@@ -41,14 +47,12 @@ function register() {
     document.getElementById("alertDate").innerHTML = "<p></p>";
     document.getElementById("alertCheck").innerHTML = "<p></p>";
 
-    //let e = document.querySelector(".alert")
-
-
     // Verificar campo name
     if (name === "") {
         document.getElementById("alertName").innerHTML = "<p>Fullname invalid</p>";  
         //e.style.display="flex"
     }else cont++
+
     //console.log(cont)
     if (name.length < 4 || (name = (string) => /\s/g.test(string))===true) {
         document.getElementById("alertName").innerHTML = "<p>Fullname invalid</p>";
@@ -61,28 +65,26 @@ function register() {
     }else cont++
     if (emailRegex.test(email) === true){
         document.getElementById("alertEmail").innerHTML = "<p>Email invalid</p>";
-        console.log("true")
+        console.log("true");
     }else cont++
 
     //verifica campo password
     if(passwordRegex.test(password)===false){
         document.getElementById("alertPassword").innerHTML = "<p>Password invalid</p>";
     }else cont++
-    if(password.length <= 4 && password.length >= 9){
+    if(password.length < 6 || password.length > 9){
         document.getElementById("alertPassword").innerHTML = "<p>Password invalid</p>"; 
     }else cont++
 
-    //verifica campo phone && passwordRegex.test(phone)===false
-    if(phoneRegex.test(phone)===false ){
+    //verifica campo phone 
+    if(phoneRegex.test(phone)===false || phone.length > 11){
         document.getElementById("alertPhone").innerHTML = "<p>Phone invalid</p>";     
-    }else cont++
-    //document.getElementById("alertPhone").innerHTML = "<p>Phone invalid</p>";   
+    }else cont++   
 
     //verifica campo birthday
     if(birthday === ""){
         document.getElementById("alertDate").innerHTML = "<p>Date invalid</p>";     
     }else cont++
-
 
     //verifica campo do checklist
     if(checkbox.checked===false) {  
